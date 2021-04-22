@@ -26,12 +26,12 @@ func set_state(s):
 	if new_state != null:
 		if state != null:
 			if state.has_method("end"):
-				print("end ", s)
+				#print("end ", s)
 				state.end()
 			previous_state = state
 		state = new_state
 		if state.has_method("start"):
-			print("start ", s)
+			#print("start ", s)
 			state.start()
 	else:
 		state = null
