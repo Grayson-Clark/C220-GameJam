@@ -225,7 +225,7 @@ playing = true
 [node name="Ocean" type="AnimatedSprite" parent="."]
 position = Vector2( 512.597, 570.462 )
 frames = SubResource( 25 )
-frame = 14
+frame = 6
 playing = true
 
 [node name="Cloud1" type="Sprite" parent="."]
