@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://UI/Main.gd" type="Script" id=1]
 [ext_resource path="res://Assets/nothing_pushed.jpg" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Assets/quit_pushed.jpg" type="Texture" id=4]
 [ext_resource path="res://Fonts/MrGrieves-Regular.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Assets/CAT!.png" type="Texture" id=6]
+[ext_resource path="res://UI/Camera2D.gd" type="Script" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
@@ -15,6 +16,50 @@ font_data = ExtResource( 5 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background1" type="ColorRect" parent="."]
+margin_left = -193.839
+margin_top = -115.72
+margin_right = 830.161
+margin_bottom = 484.28
+rect_scale = Vector2( 1.25231, 1.68501 )
+color = Color( 0.545098, 0.054902, 0.203922, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background2" type="ColorRect" parent="."]
+margin_left = 474.349
+margin_top = 599.3
+margin_right = 1498.35
+margin_bottom = 1199.3
+rect_scale = Vector2( 0.265, 0.074 )
+color = Color( 0.823529, 0.717647, 0.823529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background4" type="ColorRect" parent="."]
+margin_left = -0.793945
+margin_top = -105.81
+margin_right = 1023.21
+margin_bottom = 494.19
+rect_scale = Vector2( 1.30932, 1.16537 )
+color = Color( 0.823529, 0.717647, 0.823529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background3" type="ColorRect" parent="."]
+margin_left = 457.97
+margin_top = 600.56
+margin_right = 1481.97
+margin_bottom = 1200.56
+rect_scale = Vector2( 0.015, 0.074 )
+color = Color( 0.294118, 0.168627, 0.294118, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -99,6 +144,11 @@ margin_bottom = 307.138
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.215686, 0.870588, 0.14902, 1 )
 text = "Quit"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 510, 300 )
+current = true
+script = ExtResource( 7 )
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
 [connection signal="timeout" from="Play_Timer" to="." method="_on_Play_Timer_timeout"]

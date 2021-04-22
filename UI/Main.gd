@@ -17,12 +17,14 @@ func _ready():
 
 
 func _on_Play_pressed():
+	$Camera2D.add_trauma(.3)
 	$Play_Timer.start()
 	$Nothing_Pressed.hide()
 	$Play_Pressed.show()
 
 
 func _on_Quit_pressed():
+	$Camera2D.add_trauma(.3)
 	$Quit_Timer.start()
 	$Nothing_Pressed.hide()
 	$Quit_Pressed.show()
