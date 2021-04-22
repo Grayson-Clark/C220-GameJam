@@ -14,7 +14,6 @@ func physics_process(_delta):
 	if not player.is_on_floor():
 		SM.set_state("Fall")
 	if player.is_moving():
-		print("moving")
 		SM.set_state("Move")
 	if Input.is_action_just_pressed("jump") and player.has_jump:
 		SM.set_state("Jump")

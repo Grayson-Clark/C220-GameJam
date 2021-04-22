@@ -25,11 +25,14 @@ func _ready():
 
 func _physics_process(_delta):
 	velocity.x = clamp(velocity.x,-max_move,max_move)
-	print(has_jump)
 	
 	if is_on_floor() and not has_jump:
 		has_jump = true
-
+		
+	# FOR DEBUGGING / TESTING
+	if Input.is_action_pressed("ui_accept"):
+		velocity.x += move_vector().x * 500
+		velocity.y -= Input.get_action_strength("jump") * 200
 
 func is_moving():
 	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
