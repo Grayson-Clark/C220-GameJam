@@ -31,3 +31,8 @@ IDEAS
 - Every death makes game harder (i.e. make character slower/more enemies)
 - dead bodies pile up on each death and literally make it harder to play
 - Drying could be a good thing
+
+
+
+Grayson Todo:
+- state machine
