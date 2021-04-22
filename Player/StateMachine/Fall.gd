@@ -23,7 +23,7 @@ func physics_process(_delta):
 	if player.is_on_wall():
 		player.velocity.x = 0
 	if Input.is_action_just_pressed("jump") and player.has_jump:
-		SM.set_state("Jump")
+		SM.set_state("JumpSquat")
 		
 		
 	player.velocity += player.move_speed * player.move_vector() + player.gravity

@@ -28,6 +28,10 @@ func start():
 	# add vertical and horizontal jump power to velocity
 	player.velocity += player.jump_power
 	
+	if player.shorthop:
+		player.velocity /= 1.8
+		player.shorthop = false
+	
 	# apply velocity and transition to fall
 	player.move_and_slide(player.velocity, Vector2.UP)
 	SM.set_state("Fall")
