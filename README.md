@@ -36,6 +36,7 @@ IDEAS
 
 Grayson Todo:
 - state machine
+
 Josh Church:
 - Splash Screen
 - Main Menu
