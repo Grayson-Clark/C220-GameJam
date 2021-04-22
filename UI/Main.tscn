@@ -1,14 +1,28 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://UI/Main.gd" type="Script" id=1]
 [ext_resource path="res://Assets/nothing_pushed.jpg" type="Texture" id=2]
 [ext_resource path="res://Assets/play_pushed.jpg" type="Texture" id=3]
 [ext_resource path="res://Assets/quit_pushed.jpg" type="Texture" id=4]
+[ext_resource path="res://Fonts/MrGrieves-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/CAT!.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+font_data = ExtResource( 5 )
 
 [node name="Main" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.592157, 0.101961, 0.356863, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -32,6 +46,15 @@ visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 4 )
+
+[node name="CAT" type="TextureRect" parent="."]
+visible = false
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Play" type="TextureButton" parent="."]
 margin_left = 513.0
@@ -57,7 +80,28 @@ one_shot = true
 
 [node name="Quit_Timer" type="Timer" parent="."]
 wait_time = 0.4
+
+[node name="Mouth_Button" type="TextureButton" parent="."]
+margin_left = 716.584
+margin_top = 479.703
+margin_right = 749.584
+margin_bottom = 511.703
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hidden_Button" type="Button" parent="."]
+visible = false
+margin_left = 400.024
+margin_top = 219.138
+margin_right = 641.024
+margin_bottom = 307.138
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.215686, 0.870588, 0.14902, 1 )
+text = "Quit"
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
 [connection signal="timeout" from="Play_Timer" to="." method="_on_Play_Timer_timeout"]
 [connection signal="timeout" from="Quit_Timer" to="." method="_on_Quit_Timer_timeout"]
+[connection signal="pressed" from="Mouth_Button" to="." method="_on_Mouth_Button_pressed"]
+[connection signal="pressed" from="Hidden_Button" to="." method="_on_Hidden_Button_pressed"]

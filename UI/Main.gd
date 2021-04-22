@@ -10,7 +10,9 @@ func _physics_process(delta):
 	if quit:
 		quit = false
 		get_tree().quit()
-		
+
+func _ready():
+	$Hidden_Button.disabled = true
 
 
 
@@ -32,3 +34,18 @@ func _on_Play_Timer_timeout():
 
 func _on_Quit_Timer_timeout():
 	quit = true
+
+
+func _on_Mouth_Button_pressed():
+	$Nothing_Pressed.hide()
+	$CAT.show()
+	$Play.disabled = true
+	$Quit.disabled = true
+	$Mouth_Button.disabled = true
+	$Hidden_Button.disabled = false
+	$Hidden_Button.show()
+	
+
+
+func _on_Hidden_Button_pressed():
+	get_tree().quit()
