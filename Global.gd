@@ -4,6 +4,9 @@ var num_spirits = 0
 
 func _ready():
 	pass
+	
+func increment_num_spirits():
+	num_spirits += 1
 
 
 func _input(event):

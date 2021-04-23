@@ -15,3 +15,4 @@ func _on_Area2D_body_entered(body):
 	if body.name == "Player":
 		var new_dialog = Dialogic.start('CatSoul' + str(CatNum))
 		add_child(new_dialog)
+		Global.increment_num_spirits()
