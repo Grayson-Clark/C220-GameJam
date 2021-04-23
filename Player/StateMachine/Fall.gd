@@ -13,6 +13,8 @@ func start():
 func physics_process(_delta):
 	if player.is_on_floor() and player.velocity.y > 0:
 		player.velocity.y = 0
+		#var SFX = get_node("/root/Game/SFX")
+		#SFX.play_land_SFX()
 		if player.is_moving():
 			SM.set_state("Move")
 		else:

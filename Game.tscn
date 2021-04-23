@@ -5,7 +5,11 @@
 [ext_resource path="res://Misc/Camera.gd" type="Script" id=3]
 [ext_resource path="res://UI/PauseMenu.tscn" type="PackedScene" id=4]
 [ext_resource path="res://music/Music.tscn" type="PackedScene" id=5]
+<<<<<<< HEAD
 [ext_resource path="res://Level/LevelAssets/CatSouls/CatSoul2.tscn" type="PackedScene" id=6]
+=======
+[ext_resource path="res://SFX/SFX.tscn" type="PackedScene" id=6]
+>>>>>>> 34e42046da39173e11dc47133da6ecb51cf2b6c0
 
 [node name="Game" type="Node2D"]
 
@@ -36,3 +40,5 @@ visible = false
 position = Vector2( 624.003, -501.574 )
 
 [node name="Music" parent="." instance=ExtResource( 5 )]
+
+[node name="SFX" parent="." instance=ExtResource( 6 )]

@@ -31,6 +31,9 @@ func start():
 	if player.shorthop:
 		player.velocity /= 1.8
 		player.shorthop = false
+	else:
+		var SFX = get_node("/root/Game/SFX")
+		SFX.play_jump_SFX()
 	
 	# apply velocity and transition to fall
 	player.move_and_slide(player.velocity, Vector2.UP)
