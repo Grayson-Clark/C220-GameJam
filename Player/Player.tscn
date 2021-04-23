@@ -11,113 +11,113 @@
 [ext_resource path="res://Player/StateMachine/JumpSquat.gd" type="Script" id=9]
 [ext_resource path="res://Player/PlayerAssets/smoke0.png" type="Texture" id=10]
 
-[sub_resource type="AtlasTexture" id=16]
-flags = 5
-atlas = ExtResource( 8 )
-region = Rect2( 108, 0, 54, 43 )
-
 [sub_resource type="AtlasTexture" id=1]
-flags = 5
+flags = 4
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=2]
-flags = 5
+flags = 4
 atlas = ExtResource( 8 )
-region = Rect2( 54, 0, 54, 43 )
+region = Rect2( 216, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=3]
-flags = 5
+flags = 4
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=4]
-flags = 5
+flags = 4
 atlas = ExtResource( 8 )
-region = Rect2( 108, 0, 54, 43 )
+region = Rect2( 270, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=5]
-flags = 5
+flags = 4
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=6]
-flags = 5
+flags = 4
 atlas = ExtResource( 8 )
-region = Rect2( 162, 0, 54, 43 )
+region = Rect2( 108, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=7]
-flags = 5
+flags = 4
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=8]
-flags = 5
-atlas = ExtResource( 8 )
-region = Rect2( 216, 0, 54, 43 )
-
-[sub_resource type="AtlasTexture" id=9]
-flags = 5
-atlas = ExtResource( 8 )
-region = Rect2( 0, 0, 54, 43 )
-
-[sub_resource type="AtlasTexture" id=10]
-flags = 5
-atlas = ExtResource( 8 )
-region = Rect2( 270, 0, 54, 43 )
-
-[sub_resource type="AtlasTexture" id=11]
-flags = 5
+flags = 4
 atlas = ExtResource( 8 )
 region = Rect2( 162, 0, 54, 43 )
 
-[sub_resource type="AtlasTexture" id=12]
-flags = 5
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 162, 0, 54, 43 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
 atlas = ExtResource( 8 )
 region = Rect2( 108, 0, 54, 43 )
 
-[sub_resource type="AtlasTexture" id=13]
-flags = 5
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 54, 43 )
 
-[sub_resource type="SpriteFrames" id=14]
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 54, 43 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 54, 0, 54, 43 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 108, 0, 54, 43 )
+
+[sub_resource type="SpriteFrames" id=15]
 animations = [ {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "default",
 "speed": 1.0
 }, {
-"frames": [ SubResource( 16 ) ],
-"loop": true,
-"name": "JumpSquat",
-"speed": 1.0
-}, {
-"frames": [ SubResource( 1 ), SubResource( 2 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
-"loop": false,
-"name": "Jump",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
 "name": "Move",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
 "loop": false,
 "name": "JumpLand",
 "speed": 8.0
+}, {
+"frames": [ SubResource( 12 ), SubResource( 13 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 14 ) ],
+"loop": true,
+"name": "JumpSquat",
+"speed": 1.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=15]
+[sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 20.3389, 12.4442 )
 
-[sub_resource type="CanvasItemMaterial" id=20]
+[sub_resource type="CanvasItemMaterial" id=17]
 
 [sub_resource type="Curve" id=18]
 _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.981013, 0.279545 ), 0.0, 0.0, 0, 0 ]
@@ -125,7 +125,7 @@ _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.981013, 0.279545 ), 0.0, 0
 [sub_resource type="CurveTexture" id=19]
 curve = SubResource( 18 )
 
-[sub_resource type="ParticlesMaterial" id=17]
+[sub_resource type="ParticlesMaterial" id=20]
 lifetime_randomness = 0.46
 flag_disable_z = true
 spread = 91.03
@@ -151,13 +151,13 @@ collision/safe_margin = 0.2
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 14 )
+frames = SubResource( 15 )
 animation = "JumpSquat"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.294647, 10.0173 )
-shape = SubResource( 15 )
+shape = SubResource( 16 )
 
 [node name="Detection(UNUSED_RIGHT_NOW)" type="Node2D" parent="."]
 visible = false
@@ -204,7 +204,7 @@ wait_time = 0.12
 one_shot = true
 
 [node name="Particles2D" type="Particles2D" parent="StateMachine/JumpSquat"]
-material = SubResource( 20 )
+material = SubResource( 17 )
 position = Vector2( 0.297302, 20.7405 )
 rotation = -1.5708
 scale = Vector2( 0.036, 0.036 )
@@ -214,6 +214,6 @@ lifetime = 2.0
 one_shot = true
 speed_scale = 12.0
 explosiveness = 1.0
-process_material = SubResource( 17 )
+process_material = SubResource( 20 )
 texture = ExtResource( 10 )
 [connection signal="timeout" from="StateMachine/JumpSquat/Timer" to="StateMachine/JumpSquat" method="_on_Timer_timeout"]
