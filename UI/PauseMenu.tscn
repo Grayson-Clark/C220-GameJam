@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://UI/PauseMenu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Pause Menu/Background1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Pause Menu/Background9.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Pause Menu/Background6.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Pause Menu/Background4.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Pause Menu/Background7.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Pause Menu/Background8.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Pause Menu/Background5.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Pause Menu/Background0.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Pause Menu/Background3.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Pause Menu/Background2.png" type="Texture" id=11]
 
 [node name="PauseMenu" type="Control"]
 pause_mode = 2
@@ -11,13 +21,55 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1030.0
-margin_bottom = 603.0
-color = Color( 0.270588, 0.270588, 0.270588, 0.870588 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="Background0" type="Sprite" parent="."]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Background1" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Background2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 11 )
+centered = false
+
+[node name="Background3" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 10 )
+centered = false
+
+[node name="Background4" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Background5" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Background6" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Background7" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Background8" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Background9" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 3 )
+centered = false
 
 [node name="Label" type="Label" parent="."]
 margin_left = 464.524
@@ -25,6 +77,7 @@ margin_top = 132.149
 margin_right = 514.524
 margin_bottom = 146.149
 rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Paused."
 align = 1
 valign = 1

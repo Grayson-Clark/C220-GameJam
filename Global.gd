@@ -1,6 +1,6 @@
 extends Node
 
-
+var num_spirits = 0
 
 func _ready():
 	pass
