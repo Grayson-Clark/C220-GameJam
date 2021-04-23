@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 onready var SM = $StateMachine
+onready var Footstep = $Running
 
 var velocity = Vector2.ZERO
 var jump_power = Vector2.ZERO
@@ -36,6 +37,13 @@ func _physics_process(_delta):
 	if Input.is_action_pressed("ui_accept"):
 		velocity.x += move_vector().x * 500
 		velocity.y -= Input.get_action_strength("jump") * 200
+	
+	# FOOTSTEP SOUND EFFECTS
+	if velocity.x != 0 and is_on_floor():
+		if !Footstep.playing:
+			Footstep.play()
+	elif Footstep.playing:
+		Footstep.stop()
 
 func is_moving():
 	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
