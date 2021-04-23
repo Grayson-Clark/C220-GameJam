@@ -24,6 +24,8 @@ func _on_Area2D_body_entered(body):
 		var new_dialog = Dialogic.start('CatSoul' + str(CatNum))
 		add_child(new_dialog)
 		Global.increment_num_spirits()
+		var SFX = get_node("/root/Game/SFX")
+		SFX.play_spirit_meow_SFX()
 		new_dialog.connect("event_end", self, "die")
 
 func _process(delta):
