@@ -18,6 +18,7 @@ func _ready():
 
 func _on_Play_pressed():
 	$Camera2D.add_trauma(.3)
+	$earthquake.play()
 	$Play_Timer.start()
 	$Nothing_Pressed.hide()
 	$Play_Pressed.show()
@@ -25,6 +26,7 @@ func _on_Play_pressed():
 
 func _on_Quit_pressed():
 	$Camera2D.add_trauma(.3)
+	$earthquake.play()
 	$Quit_Timer.start()
 	$Nothing_Pressed.hide()
 	$Quit_Pressed.show()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://UI/Main.gd" type="Script" id=1]
 [ext_resource path="res://Assets/nothing_pushed.jpg" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Fonts/MrGrieves-Regular.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Assets/CAT!.png" type="Texture" id=6]
 [ext_resource path="res://UI/Camera2D.gd" type="Script" id=7]
+[ext_resource path="res://Sound Effects/earthquake.ogg" type="AudioStream" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
@@ -149,6 +150,10 @@ text = "Quit"
 position = Vector2( 510, 300 )
 current = true
 script = ExtResource( 7 )
+
+[node name="earthquake" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -25.0
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
 [connection signal="timeout" from="Play_Timer" to="." method="_on_Play_Timer_timeout"]
