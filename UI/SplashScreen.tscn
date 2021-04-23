@@ -1,10 +1,12 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://Fonts/sea_font.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Wave-spritesheet.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Ship-spritesheet.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Cloud.png" type="Texture" id=4]
 [ext_resource path="res://UI/SplashScreen.gd" type="Script" id=5]
+[ext_resource path="res://Sound Effects/sail_flapping.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Sound Effects/water.ogg" type="AudioStream" id=7]
 
 [sub_resource type="Animation" id=1]
 resource_name = "DoSlashAnimation"
@@ -66,6 +68,38 @@ tracks/1/enabled = true
 tracks/1/keys = {
 "points": PoolRealArray( 4, -0.25, 0, 0.25, 0, 10, -0.23, -26, 0.25, 0, 3, -0.22, -13, 0.25, 0, 8, -0.25, 0, 0.25, 0, -11, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, -7, -0.2, -8, 0.25, 0 ),
 "times": PoolRealArray( 0, 1, 2.1, 2.9, 4, 5, 6.1 )
+}
+
+[sub_resource type="Animation" id=27]
+resource_name = "Sail"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("sail:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3, 6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -15.0, -15.0, -25.0 ]
+}
+
+[sub_resource type="Animation" id=28]
+resource_name = "Water"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("water:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3, 6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -25.0, -25.0, -40.0 ]
 }
 
 [sub_resource type="AtlasTexture" id=3]
@@ -204,6 +238,14 @@ anims/DoSlashAnimation = SubResource( 1 )
 autoplay = "Boat"
 anims/Boat = SubResource( 2 )
 
+[node name="Sail" type="AnimationPlayer" parent="."]
+autoplay = "Sail"
+anims/Sail = SubResource( 27 )
+
+[node name="Water" type="AnimationPlayer" parent="."]
+autoplay = "Water"
+anims/Water = SubResource( 28 )
+
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -215,17 +257,16 @@ __meta__ = {
 }
 
 [node name="Ship" type="AnimatedSprite" parent="."]
-position = Vector2( -74.6082, 520 )
-rotation = 0.0698132
+position = Vector2( 1150, 520 )
+rotation = -0.15707
 scale = Vector2( 0.15, 0.15 )
 frames = SubResource( 7 )
-frame = 3
 playing = true
 
 [node name="Ocean" type="AnimatedSprite" parent="."]
 position = Vector2( 512.597, 570.462 )
+scale = Vector2( 1.1, 1 )
 frames = SubResource( 25 )
-frame = 6
 playing = true
 
 [node name="Cloud1" type="Sprite" parent="."]
@@ -244,10 +285,11 @@ scale = Vector2( 0.55, 0.65 )
 texture = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.857143 )
 margin_left = 36.0
-margin_top = -300.0
+margin_top = 140.0
 margin_right = 993.0
-margin_bottom = 23.0003
+margin_bottom = 463.0
 custom_fonts/font = SubResource( 26 )
 custom_colors/font_color = Color( 0.164706, 0.176471, 0.866667, 1 )
 text = "graychell joshen Games"
@@ -256,4 +298,16 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="sail" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 514.318, 325.417 )
+stream = ExtResource( 6 )
+volume_db = -25.0
+autoplay = true
+
+[node name="water" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 514.318, 325.417 )
+stream = ExtResource( 7 )
+volume_db = -40.0
+autoplay = true
 [connection signal="animation_finished" from="Text" to="." method="_on_AnimationPlayer_animation_finished"]
