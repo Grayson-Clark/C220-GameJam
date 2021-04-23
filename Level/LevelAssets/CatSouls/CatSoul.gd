@@ -6,8 +6,16 @@ extends Node2D
 # timeline to use. Make sure when making dialogue for a cat soul you title the timeline 
 # CatSoul1 or CatSoul2 or something like that
 export(int) var CatNum
+# if this sprite should be facing left. Need to do it this way to make sure dialogic stuff isn't flipped around
+export var isSpriteFlipped = false
+
+var die = false
+
+onready var shader = get_node("Sprite").material
 
 func _ready():
+	if isSpriteFlipped:
+		$Sprite.flip_h = true
 	$Sprite.texture = load("res://Level/LevelAssets/CatSouls/cat " + str(CatNum) + ".png")
 
 # called when player is close to this CatSoul
@@ -16,3 +24,15 @@ func _on_Area2D_body_entered(body):
 		var new_dialog = Dialogic.start('CatSoul' + str(CatNum))
 		add_child(new_dialog)
 		Global.increment_num_spirits()
+		new_dialog.connect("event_end", self, "die")
+
+func _process(delta):
+	if die:
+		var dissolve = shader.get_shader_param("dissolve_value")
+		if dissolve > 0:
+			shader.set_shader_param("dissolve_value", dissolve - 0.01)
+		else:
+			queue_free()
+
+func die(timeline_name):
+	die = true

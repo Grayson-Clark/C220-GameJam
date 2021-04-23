@@ -22,7 +22,7 @@ func _ready():
 	
 func _process(delta):
 	if HowToPlay.percent_visible != 1:
-		HowToPlay.percent_visible += 0.002
+		HowToPlay.percent_visible += 0.005
 "
 
 [sub_resource type="ShaderMaterial" id=2]
@@ -340,5 +340,5 @@ __meta__ = {
 
 [node name="CatSoul" parent="." instance=ExtResource( 8 )]
 position = Vector2( 417.654, 587.104 )
-scale = Vector2( -1, 1 )
 CatNum = 1
+isSpriteFlipped = true

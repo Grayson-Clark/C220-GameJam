@@ -18,6 +18,7 @@ func _on_Play_pressed():
 	if Dialogic.get_variable("PlayerName").empty():
 		$CatName.show()
 	else:
+		print("Cat name: ", Dialogic.get_variable("PlayerName"))
 		$Camera2D.add_trauma(.3)
 		$earthquake.play()
 		$Play_Timer.start()
