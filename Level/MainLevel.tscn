@@ -279,7 +279,7 @@ position = Vector2( 1228.7, 347.671 )
 [node name="Platforms" type="Node" parent="."]
 
 [node name="TestPlatform1" type="Node2D" parent="Platforms"]
-position = Vector2( 964.945, 476.088 )
+position = Vector2( 776.371, 538.946 )
 __meta__ = {
 "_edit_group_": true
 }

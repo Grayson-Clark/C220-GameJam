@@ -38,7 +38,7 @@ func _physics_process(_delta):
 		velocity.x += move_vector().x * 500
 		velocity.y -= Input.get_action_strength("jump") * 200
 	
-	# FOOTSTEP SOUND EFFECTS
+	# FOOTSTEP SOUND EFFECTS (Not working correctly atm)
 	if velocity.x != 0 and is_on_floor():
 		if !Footstep.playing:
 			Footstep.play()
