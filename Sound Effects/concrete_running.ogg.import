@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/concrete_running.ogg-0ac18693cb5c74037063f57fb0bf5678.oggstr"
+
+[deps]
+
+source_file="res://Sound Effects/concrete_running.ogg"
+dest_files=[ "res://.import/concrete_running.ogg-0ac18693cb5c74037063f57fb0bf5678.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sail_flapping.ogg-f2ae44385c867740ca429f87ff76152b.oggstr"
+
+[deps]
+
+source_file="res://Sound Effects/sail_flapping.ogg"
+dest_files=[ "res://.import/sail_flapping.ogg-f2ae44385c867740ca429f87ff76152b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

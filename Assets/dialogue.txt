@@ -1,0 +1,97 @@
+cat lessons and dialogue 
+
+note: each number is meant to signify when the player has to press a button to move forward--so, to move from 1 to 2 the player should press a button. kind of self explanatory but i just thought i'd make sure y'all knew ¯\_(ツ)_/¯ 
+
+first cat
+1. oh, hello there [PlayerName]. we finally got to our ninth life, did we? congratulations! well, to you and to me. to both of us. 
+2. since we are the same cat. 
+3. kind of? 
+4. oh, you know how it works. cat law, or whatever. 
+5. i have to say, as far as deaths go, mine wasn’t so bad. 
+6. a little unconventional, but not bad. 
+7. …
+8. …
+9. how was i supposed to know that other cat had massive claws? it’s unnatural. messed up. 
+10. *sigh* well, you know what they say. live fast, die young, or whatever. 
+11. we probably should’ve picked our battles more carefully, huh?
+12. …
+13. c’mon, [PlayerName]. let’s move on up in the world. 
+
+second cat
+1. finally! it’s about time you showed up, [PlayerName]. we’ve been stuck here way too long. 
+2. you remember my life, right? best life you’ve ever lived, i bet!
+3. roaming through the forest, catching mice, snoozing in the sun…happy days! 
+4. well, till the end there. no matter how much we cleaned, that scratch just wouldn’t heal, would it? 
+5. at least i’m not feeling it now! 
+6. …if we’d asked for help, maybe we could’ve lived through that. too bad!
+7. it’s something to know for the future, though, right?
+8. alright, let’s get on with it. 
+
+third cat
+1. …glad to see you. 
+2. i’ve been waiting. 
+3. …
+4. i still miss her. do you?
+5. do you even remember, [PlayerName]?
+6. she’d always give us treats, every single night. without fail. 
+7. i really wanted to be with her at the end. 
+8. but cats don’t live as long as humans. it was an impossible wish from the start. 
+9. …
+10. i still wished it, though. 
+11. maybe she’ll join us up there someday. 
+
+fourth cat
+1. hey, ninth me! how ya doing?
+2. well, you’re here, so you must not be doing that well, but it could definitely be worse. 
+3. …
+4. …
+5. you’re not looking for our fourth death story, are you? geez! not my responsibility to shell out my life story. you’re me, you should already know, anyway! 
+6. …
+7. quit staring. i’m not going to tell you. 
+8. if we’d kept our mouth shut back then, maybe it wouldn’t have ended so soon. i’ve learned my lesson. 
+9. we’re getting out of here, [PlayerName]. 
+
+fifth cat
+1. you know what they say—“curiosity killed the cat.” 
+2. it sucks to prove such a cliche phrase right!
+3. poisonous berries. who could’ve known? 
+4. we didn’t suffer much, though. not sure if you remember, [PlayerName]. it came pretty quick. 
+5. or, ended pretty quick, i guess. 
+6. they looked sooo good though, red and juicy…
+7. …
+8. i’m beginning to think i didn’t learn anything from this experience. hah!
+9. there aren’t any poisonous things up there, though! c’mon, let’s go! 
+
+sixth cat
+1. …
+2. everyone says they want to die in their sleep, but it’s not so great. 
+3. i curled up at the foot of his bed that night, not knowing i wouldn’t wake up in that world. 
+4. or did i know? was i supposed to feel something before i went to bed? was i supposed to know i was going to die? 
+5. it didn’t even feel different from sleeping. 
+6. …
+7. i’m glad i didn’t have to see how he reacted when he woke up. i was already here by then. 
+8. it was time well spent, though. always.
+9. i’m ready to not be here anymore. 
+
+seventh cat
+1. WOW! good to see you after all! i was beginning to think you’d never die, [PlayerName]! 
+2. it’s kinda weird to know that you’re just a part of several different lives, huh? six other lives came before me! six! that’s insane! 
+3. and there were two after me. i wonder what’s gonna happen when we get up there?
+4. will we all combine into one supercat? with all our skills? that’d be so cool! 
+5. my human, amiko, she was obsessed with reincarnation stuff. it was pretty weird. 
+6. if i’d known then what i know now, though, maybe i could’ve helped her out! 
+7. i wanna see if i can send her a message in the afterlife. come on, come on, let’s get moving! 
+
+eighth cat
+1. huh. so we made it. 
+2. you and i are pretty close, huh? 
+3. i know you’ve lived a whole other life since me, but i feel connected to you. 
+4. i suppose we all do. 
+5. nine lives, though…i hope we mattered.
+6. everyone hopes that. it feels kind of like only your life mattered, though. only [PlayerName]’s life. without you, we can’t move forward. 
+7. but you needed us to be here. 
+8. …
+9. are you ready to face it, [PlayerName]? we’ve not had to until now. are you ready? 
+10. are you ready? 
+11. don’t be scared. 
+
