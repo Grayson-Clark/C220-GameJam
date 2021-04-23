@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/PauseMenu.gd" type="Script" id=1]
+
+[node name="PauseMenu" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 464.524
+margin_top = 132.149
+margin_right = 514.524
+margin_bottom = 146.149
+rect_scale = Vector2( 2, 2 )
+text = "Paused."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Resume" type="Button" parent="."]
+margin_left = 444.501
+margin_top = 289.66
+margin_right = 508.501
+margin_bottom = 309.66
+rect_scale = Vector2( 2, 2 )
+text = "Resume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 469.863
+margin_top = 393.778
+margin_right = 509.863
+margin_bottom = 413.778
+rect_scale = Vector2( 2, 2 )
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

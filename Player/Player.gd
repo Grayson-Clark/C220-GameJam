@@ -8,14 +8,16 @@ var direction = 1 # 1 is facing right, -1 is facing left
 
 export var gravity = Vector2(0,30)
 
-export var move_speed = 20
+export var move_speed = 20 # horizontal "walk" speed
 export var max_move = 300
 
-export var jump_speed = 100 # vertical jump "power"
+export var jump_speed = 750 # vertical jump "power"
 export var max_jump = 1000
 
-export var leap_speed = 100 # horizontal jump "power"
+export var leap_speed = 80 # horizontal jump "power"
 export var max_leap = 1000
+
+var shorthop = false
 
 var has_jump = true
 
@@ -28,6 +30,7 @@ func _physics_process(_delta):
 	
 	if is_on_floor() and not has_jump:
 		has_jump = true
+		
 		
 	# FOR DEBUGGING / TESTING
 	if Input.is_action_pressed("ui_accept"):
@@ -44,8 +47,10 @@ func move_vector():
 
 func _unhandled_input(event):
 	if event.is_action_pressed("left"):
+		$AnimatedSprite.flip_h = true
 		direction = -1
 	if event.is_action_pressed("right"):
+		$AnimatedSprite.flip_h = false
 		direction = 1
 
 func set_animation(anim):
