@@ -70,7 +70,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 1, 2.1, 2.9, 4, 5, 6.1 )
 }
 
-[sub_resource type="Animation" id=27]
+[sub_resource type="Animation" id=3]
 resource_name = "Sail"
 length = 6.0
 tracks/0/type = "value"
@@ -86,7 +86,7 @@ tracks/0/keys = {
 "values": [ -15.0, -15.0, -25.0 ]
 }
 
-[sub_resource type="Animation" id=28]
+[sub_resource type="Animation" id=4]
 resource_name = "Water"
 length = 6.0
 tracks/0/type = "value"
@@ -102,128 +102,128 @@ tracks/0/keys = {
 "values": [ -25.0, -25.0, -40.0 ]
 }
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=5]
 flags = 4
 atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 1400, 1400 )
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=6]
 flags = 4
 atlas = ExtResource( 3 )
 region = Rect2( 1400, 0, 1400, 1400 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=7]
 flags = 4
 atlas = ExtResource( 3 )
 region = Rect2( 0, 1400, 1400, 1400 )
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=8]
 flags = 4
 atlas = ExtResource( 3 )
 region = Rect2( 1400, 1400, 1400, 1400 )
 
-[sub_resource type="SpriteFrames" id=7]
+[sub_resource type="SpriteFrames" id=9]
 animations = [ {
-"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
 "loop": true,
 "name": "default",
 "speed": 7.0
 } ]
 
-[sub_resource type="AtlasTexture" id=8]
+[sub_resource type="AtlasTexture" id=10]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=9]
+[sub_resource type="AtlasTexture" id=11]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 1024, 0, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=10]
+[sub_resource type="AtlasTexture" id=12]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 2048, 0, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=11]
+[sub_resource type="AtlasTexture" id=13]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 0, 80, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=12]
+[sub_resource type="AtlasTexture" id=14]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 1024, 80, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=13]
+[sub_resource type="AtlasTexture" id=15]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 2048, 80, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=14]
+[sub_resource type="AtlasTexture" id=16]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 0, 160, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=15]
+[sub_resource type="AtlasTexture" id=17]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 1024, 160, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=16]
+[sub_resource type="AtlasTexture" id=18]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 2048, 160, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=17]
+[sub_resource type="AtlasTexture" id=19]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 0, 240, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=18]
+[sub_resource type="AtlasTexture" id=20]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 1024, 240, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=19]
+[sub_resource type="AtlasTexture" id=21]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 2048, 240, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=20]
+[sub_resource type="AtlasTexture" id=22]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 0, 320, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=21]
+[sub_resource type="AtlasTexture" id=23]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 2048, 320, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=22]
+[sub_resource type="AtlasTexture" id=24]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 0, 400, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=23]
+[sub_resource type="AtlasTexture" id=25]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 1024, 400, 1024, 80 )
 
-[sub_resource type="AtlasTexture" id=24]
+[sub_resource type="AtlasTexture" id=26]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 2048, 400, 1024, 80 )
 
-[sub_resource type="SpriteFrames" id=25]
+[sub_resource type="SpriteFrames" id=27]
 animations = [ {
-"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ) ],
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
 "loop": true,
 "name": "default",
 "speed": 10.0
 } ]
 
-[sub_resource type="DynamicFont" id=26]
+[sub_resource type="DynamicFont" id=28]
 size = 150
 font_data = ExtResource( 1 )
 
@@ -240,11 +240,11 @@ anims/Boat = SubResource( 2 )
 
 [node name="Sail" type="AnimationPlayer" parent="."]
 autoplay = "Sail"
-anims/Sail = SubResource( 27 )
+anims/Sail = SubResource( 3 )
 
 [node name="Water" type="AnimationPlayer" parent="."]
 autoplay = "Water"
-anims/Water = SubResource( 28 )
+anims/Water = SubResource( 4 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
@@ -260,15 +260,14 @@ __meta__ = {
 position = Vector2( 1150, 520 )
 rotation = -0.15707
 scale = Vector2( 0.15, 0.15 )
-frames = SubResource( 7 )
-frame = 2
+frames = SubResource( 9 )
 playing = true
 
 [node name="Ocean" type="AnimatedSprite" parent="."]
 position = Vector2( 512.597, 570.462 )
 scale = Vector2( 1.1, 1 )
-frames = SubResource( 25 )
-frame = 1
+frames = SubResource( 27 )
+frame = 10
 playing = true
 
 [node name="Cloud1" type="Sprite" parent="."]
@@ -292,7 +291,7 @@ margin_left = 36.0
 margin_top = 140.0
 margin_right = 993.0
 margin_bottom = 463.0
-custom_fonts/font = SubResource( 26 )
+custom_fonts/font = SubResource( 28 )
 custom_colors/font_color = Color( 0.164706, 0.176471, 0.866667, 1 )
 text = "graychell joshen Games"
 align = 1
