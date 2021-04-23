@@ -261,6 +261,7 @@ position = Vector2( 1150, 520 )
 rotation = -0.15707
 scale = Vector2( 0.15, 0.15 )
 frames = SubResource( 9 )
+frame = 1
 playing = true
 
 [node name="Ocean" type="AnimatedSprite" parent="."]
