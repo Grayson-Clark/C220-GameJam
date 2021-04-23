@@ -14,14 +14,15 @@ func _physics_process(delta):
 func _ready():
 	$Hidden_Button.disabled = true
 
-
-
 func _on_Play_pressed():
-	$Camera2D.add_trauma(.3)
-	$earthquake.play()
-	$Play_Timer.start()
-	$Nothing_Pressed.hide()
-	$Play_Pressed.show()
+	if Dialogic.get_variable("PlayerName").empty():
+		$CatName.show()
+	else:
+		$Camera2D.add_trauma(.3)
+		$earthquake.play()
+		$Play_Timer.start()
+		$Nothing_Pressed.hide()
+		$Play_Pressed.show()
 
 
 func _on_Quit_pressed():
@@ -53,3 +54,12 @@ func _on_Mouth_Button_pressed():
 
 func _on_Hidden_Button_pressed():
 	get_tree().quit()
+
+
+func _on_Finish_pressed():
+	var catname = $"CatName/LineEdit".get_text()
+	Dialogic.get_definitions()['variables'].push_back({'name': 'PlayerName'})
+	Dialogic.set_variable("PlayerName", catname)
+	var d = Dialogic.new()
+	d.save_definitions()
+	$CatName.hide()

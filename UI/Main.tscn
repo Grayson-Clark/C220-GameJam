@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://UI/Main.gd" type="Script" id=1]
 [ext_resource path="res://Assets/nothing_pushed.jpg" type="Texture" id=2]
@@ -11,6 +11,14 @@
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 15
+outline_size = 1
+outline_color = Color( 0.133333, 0.133333, 0.133333, 1 )
+use_mipmaps = true
+extra_spacing_char = 2
 font_data = ExtResource( 5 )
 
 [node name="Main" type="Control"]
@@ -154,9 +162,72 @@ script = ExtResource( 7 )
 [node name="earthquake" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
 volume_db = -25.0
+
+[node name="CatName" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="CatName"]
+margin_right = 1026.0
+margin_bottom = 602.0
+color = Color( 0.45098, 0.45098, 0.45098, 0.976471 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WhatIsCatName" type="Label" parent="CatName"]
+margin_left = -10.9633
+margin_top = 32.3458
+margin_right = 340.037
+margin_bottom = 119.346
+rect_scale = Vector2( 3, 3 )
+custom_fonts/font = SubResource( 2 )
+text = "What is your cat's name?"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EnterHere" type="Label" parent="CatName"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 217.083
+margin_top = 269.211
+margin_right = 568.083
+margin_bottom = 356.211
+text = "Enter name here:"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Finish" type="Button" parent="CatName"]
+margin_left = 402.633
+margin_top = 490.857
+margin_right = 628.633
+margin_bottom = 539.857
+text = "This is my cat's name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="CatName"]
+margin_left = 335.631
+margin_top = 322.579
+margin_right = 688.631
+margin_bottom = 395.579
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
 [connection signal="timeout" from="Play_Timer" to="." method="_on_Play_Timer_timeout"]
 [connection signal="timeout" from="Quit_Timer" to="." method="_on_Quit_Timer_timeout"]
 [connection signal="pressed" from="Mouth_Button" to="." method="_on_Mouth_Button_pressed"]
 [connection signal="pressed" from="Hidden_Button" to="." method="_on_Hidden_Button_pressed"]
+[connection signal="pressed" from="CatName/Finish" to="." method="_on_Finish_pressed"]
