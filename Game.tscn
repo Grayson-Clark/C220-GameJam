@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player/PlayerContainer.gd" type="Script" id=1]
 [ext_resource path="res://Level/MainLevel.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Misc/Camera.gd" type="Script" id=3]
 [ext_resource path="res://UI/PauseMenu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://music/Music.tscn" type="PackedScene" id=5]
 
 [node name="Game" type="Node2D"]
 
@@ -29,3 +30,5 @@ script = ExtResource( 3 )
 
 [node name="PauseMenu" parent="UI" instance=ExtResource( 4 )]
 visible = false
+
+[node name="Music" parent="." instance=ExtResource( 5 )]

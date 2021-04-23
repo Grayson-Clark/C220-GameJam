@@ -7,6 +7,8 @@ func _ready():
 	
 func increment_num_spirits():
 	num_spirits += 1
+	var Music = get_node("/root/Game/Music")
+	Music.update_music()
 
 
 func _input(event):
