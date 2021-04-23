@@ -39,11 +39,11 @@ func _physics_process(_delta):
 		velocity.y -= Input.get_action_strength("jump") * 200
 	
 	# FOOTSTEP SOUND EFFECTS (Not working correctly atm)
-	if velocity.x != 0 and is_on_floor():
-		if !Footstep.playing:
-			Footstep.play()
-	elif Footstep.playing:
-		Footstep.stop()
+	#if velocity.x != 0 and is_on_floor():
+	#	if !Footstep.playing:
+	#		Footstep.play()
+	#elif Footstep.playing:
+	#	Footstep.stop()
 
 func is_moving():
 	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
