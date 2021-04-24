@@ -23,6 +23,7 @@ func _ready():
 # called when player is close to this CatSoul
 func _on_Area2D_body_entered(body):
 	if body.name == "Player" and Global.can_move:
+		$Area2D.queue_free()
 		var new_dialog = Dialogic.start('CatSoul' + str(CatNum))
 		UI.add_child(new_dialog)
 		Global.increment_num_spirits()
