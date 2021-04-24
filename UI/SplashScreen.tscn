@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Fonts/sea_font.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Wave-spritesheet.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://UI/SplashScreen.gd" type="Script" id=5]
 [ext_resource path="res://Sound Effects/sail_flapping.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Sound Effects/water.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Sound Effects/gray_shell_josh_in_games.ogg" type="AudioStream" id=8]
 
 [sub_resource type="Animation" id=1]
 resource_name = "DoSlashAnimation"
@@ -100,6 +101,22 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ -25.0, -25.0, -40.0 ]
+}
+
+[sub_resource type="Animation" id=29]
+resource_name = "Games"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("games:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( -0.1, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
 }
 
 [sub_resource type="AtlasTexture" id=5]
@@ -246,6 +263,10 @@ anims/Sail = SubResource( 3 )
 autoplay = "Water"
 anims/Water = SubResource( 4 )
 
+[node name="Games" type="AnimationPlayer" parent="."]
+autoplay = "Games"
+anims/Games = SubResource( 29 )
+
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -257,18 +278,18 @@ __meta__ = {
 }
 
 [node name="Ship" type="AnimatedSprite" parent="."]
-position = Vector2( 1150, 520 )
-rotation = -0.15707
+position = Vector2( -74.6082, 520 )
+rotation = 0.0698132
 scale = Vector2( 0.15, 0.15 )
 frames = SubResource( 9 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="Ocean" type="AnimatedSprite" parent="."]
 position = Vector2( 512.597, 570.462 )
 scale = Vector2( 1.1, 1 )
 frames = SubResource( 27 )
-frame = 10
+frame = 13
 playing = true
 
 [node name="Cloud1" type="Sprite" parent="."]
@@ -287,7 +308,6 @@ scale = Vector2( 0.55, 0.65 )
 texture = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0.857143 )
 margin_left = 36.0
 margin_top = 140.0
 margin_right = 993.0
@@ -304,12 +324,16 @@ __meta__ = {
 [node name="sail" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 514.318, 325.417 )
 stream = ExtResource( 6 )
-volume_db = -25.0
+volume_db = -15.0
 autoplay = true
 
 [node name="water" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 514.318, 325.417 )
 stream = ExtResource( 7 )
-volume_db = -40.0
+volume_db = -25.0
 autoplay = true
+
+[node name="games" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -30.02
 [connection signal="animation_finished" from="Text" to="." method="_on_AnimationPlayer_animation_finished"]
