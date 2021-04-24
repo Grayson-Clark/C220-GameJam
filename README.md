@@ -1,11 +1,11 @@
 # Project Name
-Purrrgatory
+Purrrrgatory
 MSCH-C220 Game Jam, April 2021
 
 ## Theme
 Every Death Counts
 
-Our game features a cat stuck in "purrrgatory," wherein it has to collect each of it's eight other lives in order to ascend into the afterlife. If the player has not spoken to and collected all eight of the cat's lives, the cat cannot ascend, therefore instituting the idea that every death counts toward success in the game. 
+Our game features a cat stuck in "purrrrgatory," wherein it has to collect each of it's eight other lives in order to ascend into the afterlife. If the player has not spoken to and collected all eight of the cat's lives, the cat cannot ascend, therefore instituting the idea that every death counts toward success in the game. 
 
 ## Game Play
 The objective of the game is to get your cat out of "purrrgatory" by speaking to and collecting each of it's eight other lives. 
@@ -32,6 +32,8 @@ Syncing new instrument with the addition of a cat; smooth movement that isn't ru
 15. sound effects
 16. pause screen cat graphic from https://pixabay.com/vectors/cat-shadow-silhouette-black-animal-2074514/ 
 17. pause screen spirit graphic from https://www.freepik.com/free-icon/flame-silhouette-variant_735447.htm 
+18. meow sound effect from https://freesound.org/people/Kim_Kimovna/sounds/563746/
+19. jump sound effect from https://freesound.org/people/Juaner_/sounds/471428/
 
 ## References
 Cattails (2021)
