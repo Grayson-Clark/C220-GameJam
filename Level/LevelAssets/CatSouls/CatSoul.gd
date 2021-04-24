@@ -12,22 +12,25 @@ export var isSpriteFlipped = false
 var die = false
 
 onready var shader = get_node("Sprite").material
+onready var UI = get_node("/root/Game/UI")
 
 func _ready():
 	if isSpriteFlipped:
 		$Sprite.flip_h = true
-	$Sprite.texture = load("res://Level/LevelAssets/CatSouls/cat " + str(CatNum) + ".png")
+	var tex_path = "res://Level/LevelAssets/CatSouls/cat " + str(CatNum) + ".png"
+	$Sprite.texture = load(tex_path)
 
 # called when player is close to this CatSoul
 func _on_Area2D_body_entered(body):
-	if body.name == "Player":
+	if body.name == "Player" and Global.can_move:
 		var new_dialog = Dialogic.start('CatSoul' + str(CatNum))
-		add_child(new_dialog)
+		UI.add_child(new_dialog)
 		Global.increment_num_spirits()
-		print("entered")
 		var SFX = get_node("/root/Game/SFX")
 		SFX.play_spirit_meow_SFX()
 		new_dialog.connect("event_end", self, "die")
+		#new_dialog.connect("event_start", self, "dialogue_start")
+		Global.can_move = false
 
 func _process(delta):
 	if die:
@@ -37,5 +40,7 @@ func _process(delta):
 		else:
 			queue_free()
 
-func die(timeline_name):
+func die(type):
+	Global.can_move = true
 	die = true
+	

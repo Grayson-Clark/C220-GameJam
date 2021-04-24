@@ -8,7 +8,6 @@ func _ready():
 
 func _process(_delta):
 	if not has_node("Player"):
-		print("Spawn player")
 		respawn_player()
 
 func respawn_player():

@@ -1,6 +1,7 @@
 extends Node
 
 var num_spirits = 0
+var can_move = true
 
 func _ready():
 	pass
@@ -14,7 +15,7 @@ func increment_num_spirits():
 
 
 func _input(event):
-	if Input.is_action_just_pressed("quit"):
+	if Input.is_action_just_pressed("quit") and can_move:
 		# if pressed quit in any scene except the main level, quit
 		if get_tree().get_current_scene().get_name() != "Game":
 			get_tree().quit()

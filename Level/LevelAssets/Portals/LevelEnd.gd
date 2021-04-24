@@ -1,10 +1,20 @@
 extends Node2D
 
+var make_vis = false
+onready var label = $Label
 
 func _ready():
-	pass
-
+	if label.percent_visible != 0:
+		label.percent_visible = 0
 
 func _on_Area2D_body_entered(body):
 	if body.name == "Player":
-		print("End level")
+		if Global.num_spirits >= 8:
+			print("Game complete!")
+			#get_tree().change_scene("INSERT_END_GAME_SCREEN_HERE")
+		else:
+			make_vis = true
+
+func _process(_d):
+	if make_vis:
+		label.percent_visible += 0.005

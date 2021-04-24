@@ -29,7 +29,8 @@ func start():
 	player.velocity += player.jump_power
 	
 	if player.shorthop:
-		player.velocity /= 1.8
+		player.velocity.y /= 1.8
+		player.velocity.x *= 1.4
 		player.shorthop = false
 	else:
 		var SFX = get_node("/root/Game/SFX")

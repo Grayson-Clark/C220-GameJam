@@ -13,74 +13,74 @@
 [ext_resource path="res://Sound Effects/concrete_running.ogg" type="AudioStream" id=11]
 
 [sub_resource type="AtlasTexture" id=1]
-flags = 4
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=2]
-flags = 4
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 216, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=3]
-flags = 4
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=4]
-flags = 4
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 270, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=5]
-flags = 4
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 162, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=6]
-flags = 4
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 108, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=7]
-flags = 4
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=8]
-flags = 4
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=9]
-flags = 4
+flags = 5
+atlas = ExtResource( 8 )
+region = Rect2( 54, 0, 54, 43 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 108, 0, 54, 43 )
 
-[sub_resource type="AtlasTexture" id=10]
-flags = 4
+[sub_resource type="AtlasTexture" id=11]
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 54, 43 )
 
-[sub_resource type="AtlasTexture" id=11]
-flags = 4
-atlas = ExtResource( 8 )
-region = Rect2( 162, 0, 54, 43 )
-
 [sub_resource type="AtlasTexture" id=12]
-flags = 4
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 108, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=13]
-flags = 4
+flags = 5
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 54, 43 )
 
 [sub_resource type="AtlasTexture" id=14]
-flags = 4
+flags = 5
 atlas = ExtResource( 8 )
-region = Rect2( 54, 0, 54, 43 )
+region = Rect2( 162, 0, 54, 43 )
 
 [sub_resource type="SpriteFrames" id=15]
 animations = [ {
@@ -99,19 +99,19 @@ animations = [ {
 "name": "JumpLand",
 "speed": 8.0
 }, {
-"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
-"loop": false,
-"name": "Jump",
+"frames": [ SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "Idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 12 ) ],
+"frames": [ SubResource( 10 ) ],
 "loop": true,
 "name": "JumpSquat",
 "speed": 1.0
 }, {
-"frames": [ SubResource( 13 ), SubResource( 14 ) ],
-"loop": true,
-"name": "Idle",
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"loop": false,
+"name": "Jump",
 "speed": 5.0
 } ]
 

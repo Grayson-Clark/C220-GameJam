@@ -1,10 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Level/LevelAssets/CatSouls/cat 1.png" type="Texture" id=1]
 [ext_resource path="res://Level/LevelAssets/CatSouls/CatSoul.gd" type="Script" id=2]
 [ext_resource path="res://Assets/smooth_noise2.png" type="Texture" id=3]
 
-[sub_resource type="Shader" id=1]
+[sub_resource type="Shader" id=6]
 code = "shader_type canvas_item;
 
 uniform sampler2D dissolve_texture : hint_albedo;
@@ -17,19 +17,34 @@ void fragment(){
     COLOR = main_texture;
 }"
 
-[sub_resource type="ShaderMaterial" id=2]
-shader = SubResource( 1 )
+[sub_resource type="ShaderMaterial" id=5]
+resource_local_to_scene = true
+shader = SubResource( 6 )
 shader_param/dissolve_value = 1.0
 shader_param/dissolve_texture = ExtResource( 3 )
 
 [sub_resource type="CircleShape2D" id=3]
 radius = 84.5808
 
+[sub_resource type="ParticlesMaterial" id=4]
+emission_shape = 1
+emission_sphere_radius = 59.85
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 12.49
+angular_velocity = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 1.5
+scale_random = 0.72
+color = Color( 0.784314, 0.631373, 0.607843, 1 )
+
 [node name="CatSoul" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-material = SubResource( 2 )
+material = SubResource( 5 )
 texture = ExtResource( 1 )
 flip_h = true
 
@@ -37,4 +52,7 @@ flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 3 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+process_material = SubResource( 4 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

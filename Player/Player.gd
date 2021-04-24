@@ -51,6 +51,8 @@ func is_moving():
 	return false
 
 func move_vector():
+	if not Global.can_move:
+		return Vector2.ZERO
 	return Vector2(Input.get_action_strength("right") - Input.get_action_strength("left"),0.0)
 
 func _unhandled_input(event):
