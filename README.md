@@ -39,3 +39,10 @@ Mitchell Black - original music, bug fixes, menus
 Josh Church - splash screen, main menu, coding help, level design
 Grayson Clark - main coding, level design, state machine
 Ren Gardner - sprites, platforms, backgrounds, dialogue, narrative design
+
+Screenshots:
+![Capture](https://user-images.githubusercontent.com/77999824/115969229-f9d97980-a509-11eb-8100-bef60680345e.PNG)
+
+![Capture2](https://user-images.githubusercontent.com/77999824/115969238-01991e00-a50a-11eb-9789-dc3e4324ae0b.PNG)
+
+![Capture3](https://user-images.githubusercontent.com/77999824/115969243-065dd200-a50a-11eb-984c-1a5aabe8121c.PNG)
