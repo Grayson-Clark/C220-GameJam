@@ -1,10 +1,11 @@
 # Project Name
-Purrrgatory
+Purrrrgatory
 MSCH-C220 Game Jam, April 2021
 
 ## Theme
 Every Death Counts
-Our game features a cat stuck in "purrrgatory," wherein it has to collect each of it's eight other lives in order to ascend into the afterlife. If the player has not spoken to and collected all eight of the cat's lives, the cat cannot ascend, therefore instituting the idea that every death counts toward success in the game. 
+
+Our game features a cat stuck in "purrrrgatory," wherein it has to collect each of it's eight other lives in order to ascend into the afterlife. If the player has not spoken to and collected all eight of the cat's lives, the cat cannot ascend, therefore instituting the idea that every death counts toward success in the game. 
 
 ## Game Play
 The objective of the game is to get your cat out of "purrrgatory" by speaking to and collecting each of it's eight other lives. 
@@ -22,22 +23,35 @@ Syncing new instrument with the addition of a cat; smooth movement that isn't ru
 6. original music that adds an instrument with every cat you collect
 7. splash screen
 8. end screen 
-9. pause screen
+9. dynamic pause screen that changes each time you collect a cat
 10. original background
 11. "disintegration" effect once a cat is collected
 12. sparkle effect while cats are standing 
 13. original platforms (3 designs) 
+14. final cutscene
+15. sound effects
+16. Main Menu contributions from Jack Kinzig, Cal Hubbard
+17. "Graychell Joshen Games" sound effect by Jack Kinzig
+18. pause screen cat graphic from https://pixabay.com/vectors/cat-shadow-silhouette-black-animal-2074514/ 
+19. pause screen spirit graphic from https://www.freepik.com/free-icon/flame-silhouette-variant_735447.htm 
+20. meow sound effect from https://freesound.org/people/Kim_Kimovna/sounds/563746/
+21. jump sound effect from https://freesound.org/people/Juaner_/sounds/471428/
 
 ## References
 Cattails (2021)
+
+Cats (1981)
 
 ## Future Development
 who knows?
 
 # Created by: Group Name
-Mitchell Black - original music, bug fixes, menus
-Josh Church - splash screen, main menu, coding help, level design
-Grayson Clark - main coding, level design, state machine
+Mitchell Black - original music, bug fixes, pause menu, sound effects, audio programming
+
+Josh Church - lead level design, splash screen, main menu, coding, bug fixes, sound effects
+
+Grayson Clark - lead programming, level design, state machine, bug fixes
+
 Ren Gardner - sprites, platforms, backgrounds, dialogue, narrative design
 
 Screenshots:
