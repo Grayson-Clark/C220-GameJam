@@ -22,22 +22,27 @@ Syncing new instrument with the addition of a cat; smooth movement that isn't ru
 6. original music that adds an instrument with every cat you collect
 7. splash screen
 8. end screen 
-9. pause screen
+9. dynamic pause screen that changes each time you collect a cat
 10. original background
 11. "disintegration" effect once a cat is collected
 12. sparkle effect while cats are standing 
 13. original platforms (3 designs) 
+14. final cutscene
+15. sound effects
+16. pause screen cat graphic from https://pixabay.com/vectors/cat-shadow-silhouette-black-animal-2074514/ 
+17. pause screen spirit graphic from https://www.freepik.com/free-icon/flame-silhouette-variant_735447.htm 
 
 ## References
 Cattails (2021)
+Cats (1981)
 
 ## Future Development
 who knows?
 
 # Created by: Group Name
-Mitchell Black - original music, bug fixes, menus
-Josh Church - splash screen, main menu, coding help, level design
-Grayson Clark - main coding, level design, state machine
+Mitchell Black - original music, bug fixes, pause menu, sound effects, audio programming
+Josh Church - lead level design, splash screen, main menu, coding, bug fixes, sound effects
+Grayson Clark - lead programming, level design, state machine, bug fixes
 Ren Gardner - sprites, platforms, backgrounds, dialogue, narrative design
 
 Screenshots:
