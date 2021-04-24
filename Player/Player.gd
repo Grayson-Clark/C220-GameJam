@@ -34,7 +34,7 @@ func _physics_process(_delta):
 		
 		
 	# FOR DEBUGGING / TESTING
-	if Input.is_action_pressed("ui_accept"):
+	if Global.debug and Input.is_action_pressed("ui_accept"):
 		velocity.x += move_vector().x * 500
 		velocity.y -= Input.get_action_strength("jump") * 200
 	
@@ -46,7 +46,7 @@ func _physics_process(_delta):
 	#	Footstep.stop()
 
 func is_moving():
-	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
+	if (Input.is_action_pressed("left") or Input.is_action_pressed("right")) and Global.can_move:
 		return true
 	return false
 
@@ -56,6 +56,8 @@ func move_vector():
 	return Vector2(Input.get_action_strength("right") - Input.get_action_strength("left"),0.0)
 
 func _unhandled_input(event):
+	if not Global.can_move:
+		return
 	if event.is_action_pressed("left"):
 		$AnimatedSprite.flip_h = true
 		direction = -1

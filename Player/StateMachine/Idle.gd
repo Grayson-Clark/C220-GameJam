@@ -11,6 +11,8 @@ func start():
 	player.set_animation("Idle")
 
 func physics_process(_delta):
+	if not Global.can_move:
+		return
 	if not player.is_on_floor():
 		SM.set_state("Fall")
 	if player.is_moving():

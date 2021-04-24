@@ -32,6 +32,18 @@ script = ExtResource( 3 )
 [node name="PauseMenu" parent="UI" instance=ExtResource( 4 )]
 visible = false
 
+[node name="Debug" type="Label" parent="UI"]
+visible = false
+margin_right = 177.0
+margin_bottom = 59.0
+text = "Debug Mode Enabled
+(Hold Spacebar to fly)"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Music" parent="." instance=ExtResource( 5 )]
 
 [node name="SFX" parent="." instance=ExtResource( 7 )]

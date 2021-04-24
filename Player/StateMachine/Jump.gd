@@ -39,6 +39,3 @@ func start():
 	# apply velocity and transition to fall
 	player.move_and_slide(player.velocity, Vector2.UP)
 	SM.set_state("Fall")
-
-func physics_process(_delta):
-	pass

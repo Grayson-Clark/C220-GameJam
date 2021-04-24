@@ -2,6 +2,7 @@ extends Node
 
 var num_spirits = 1
 var can_move = true
+var debug = false
 
 func _ready():
 	pass
@@ -26,6 +27,10 @@ func _input(event):
 		# otherwise, pause the game
 		else:
 			pause_toggle()
+	elif Input.is_action_just_pressed("debug"):
+		debug = not debug
+		var debug_label = get_node("/root/Game/UI/Debug")
+		debug_label.visible = not debug_label.visible
 
 
 
