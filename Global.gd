@@ -9,6 +9,7 @@ func _ready():
 
 func start_music():
 	var Music = get_node("/root/Music")
+	Music.end_music()
 	Music._start()
 	
 func increment_num_spirits():

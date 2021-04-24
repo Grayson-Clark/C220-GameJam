@@ -261,14 +261,13 @@ position = Vector2( 1150, 520 )
 rotation = -0.15707
 scale = Vector2( 0.15, 0.15 )
 frames = SubResource( 9 )
-frame = 1
 playing = true
 
 [node name="Ocean" type="AnimatedSprite" parent="."]
 position = Vector2( 512.597, 570.462 )
 scale = Vector2( 1.1, 1 )
 frames = SubResource( 27 )
-frame = 3
+frame = 4
 playing = true
 
 [node name="Cloud1" type="Sprite" parent="."]

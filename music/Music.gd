@@ -36,3 +36,14 @@ func update_music():
 		var start_time = $Music8.get_playback_position()
 		$Music8.stop()
 		$Music9.play(start_time)
+		
+func end_music():
+	$Music1.stop()
+	$Music2.stop()
+	$Music3.stop()
+	$Music4.stop()
+	$Music5.stop()
+	$Music6.stop()
+	$Music7.stop()
+	$Music8.stop()
+	$Music9.stop()

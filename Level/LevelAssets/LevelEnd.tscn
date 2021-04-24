@@ -92,7 +92,7 @@ script = ExtResource( 8 )
 use_parent_material = true
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 1 )
-frame = 41
+frame = 45
 playing = true
 
 [node name="Area2D" type="Area2D" parent="."]

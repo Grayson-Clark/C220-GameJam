@@ -11,7 +11,7 @@ func _on_Area2D_body_entered(body):
 	if body.name == "Player":
 		if Global.num_spirits >= 8:
 			print("Game complete!")
-			#get_tree().change_scene("INSERT_END_GAME_SCREEN_HERE")
+			get_tree().change_scene("res://Ending.tscn")
 		else:
 			make_vis = true
 
