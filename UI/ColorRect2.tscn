@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="Animation" id=25]
+resource_name = "ColorRect"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=24]
+resource_name = "ColorRect"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[node name="ColorRect2" type="ColorRect"]
+modulate = Color( 0, 0, 0, 0 )
+margin_left = 802.493
+margin_top = -12646.8
+margin_right = 2802.49
+margin_bottom = -10646.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRectAnimation" type="AnimationPlayer" parent="."]
+anims/ColorRect = SubResource( 25 )
+"anims/ColorRect 2" = SubResource( 24 )
