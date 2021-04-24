@@ -13,6 +13,7 @@ func _physics_process(delta):
 
 func _ready():
 	$Hidden_Button.disabled = true
+	Global.start_music()
 
 func _on_Play_pressed():
 	if Dialogic.get_variable("PlayerName").empty():

@@ -1,5 +1,8 @@
 extends Node2D
 
+func _start():
+	$Music1.play()
+
 func update_music():
 	if Global.num_spirits == 2:
 		var start_time = $Music1.get_playback_position()

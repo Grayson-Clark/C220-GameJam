@@ -52,6 +52,7 @@ config/icon="res://icon.png"
 
 Global="*res://Global.gd"
 DialogicSingleton="*res://addons/dialogic/Other/DialogicSingleton.gd"
+Music="*res://music/Music.tscn"
 
 [display]
 

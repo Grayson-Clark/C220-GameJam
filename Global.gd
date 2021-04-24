@@ -5,10 +5,14 @@ var can_move = true
 
 func _ready():
 	pass
+
+func start_music():
+	var Music = get_node("/root/Music")
+	Music._start()
 	
 func increment_num_spirits():
 	num_spirits += 1
-	var Music = get_node("/root/Game/Music")
+	var Music = get_node("/root/Music")
 	var Pause = get_node_or_null("/root/Game/UI/PauseMenu")
 	Music.update_music()
 	Pause.update_screen()
