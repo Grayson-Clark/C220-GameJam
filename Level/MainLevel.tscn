@@ -533,7 +533,6 @@ __meta__ = {
 }
 
 [node name="CatSoul" parent="." instance=ExtResource( 8 )]
-visible = false
 position = Vector2( 417.654, 587.104 )
 CatNum = 1
 isSpriteFlipped = true
@@ -586,14 +585,14 @@ position = Vector2( 2282.03, -10581.2 )
 CatNum = 1
 isSpriteFlipped = true
 
-[node name="cat 3" type="Sprite" parent="."]
-position = Vector2( 1143.91, -1621.01 )
-texture = ExtResource( 10 )
-
 [node name="cat 2" type="Sprite" parent="."]
 position = Vector2( 583.272, -500.794 )
 texture = ExtResource( 15 )
 flip_h = true
+
+[node name="cat 3" type="Sprite" parent="."]
+position = Vector2( 959.333, -1644.98 )
+texture = ExtResource( 10 )
 
 [node name="cat 4" type="Sprite" parent="."]
 position = Vector2( 665.409, -2996.96 )
