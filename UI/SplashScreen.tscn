@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Fonts/sea_font.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Wave-spritesheet.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://UI/SplashScreen.gd" type="Script" id=5]
 [ext_resource path="res://Sound Effects/sail_flapping.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Sound Effects/water.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Sound Effects/gray_shell_josh_in_games.wav" type="AudioStream" id=8]
 
 [sub_resource type="Animation" id=1]
 resource_name = "DoSlashAnimation"
@@ -227,6 +228,22 @@ animations = [ {
 size = 150
 font_data = ExtResource( 1 )
 
+[sub_resource type="Animation" id=29]
+resource_name = "Games"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
 [node name="SplashScreen" type="Node2D"]
 script = ExtResource( 5 )
 
@@ -261,14 +278,14 @@ position = Vector2( 1150, 520 )
 rotation = -0.15707
 scale = Vector2( 0.15, 0.15 )
 frames = SubResource( 9 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="Ocean" type="AnimatedSprite" parent="."]
 position = Vector2( 512.597, 570.462 )
 scale = Vector2( 1.1, 1 )
 frames = SubResource( 27 )
-frame = 13
+frame = 15
 playing = true
 
 [node name="Cloud1" type="Sprite" parent="."]
@@ -287,11 +304,10 @@ scale = Vector2( 0.55, 0.65 )
 texture = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0.857143 )
 margin_left = 36.0
-margin_top = 140.0
+margin_top = 158.129
 margin_right = 993.0
-margin_bottom = 463.0
+margin_bottom = 481.129
 custom_fonts/font = SubResource( 28 )
 custom_colors/font_color = Color( 0.164706, 0.176471, 0.866667, 1 )
 text = "graychell joshen Games"
@@ -312,4 +328,12 @@ position = Vector2( 514.318, 325.417 )
 stream = ExtResource( 7 )
 volume_db = -40.0
 autoplay = true
+
+[node name="Games" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -25.0
+
+[node name="Games" type="AnimationPlayer" parent="Games"]
+autoplay = "Games"
+anims/Games = SubResource( 29 )
 [connection signal="animation_finished" from="Text" to="." method="_on_AnimationPlayer_animation_finished"]
