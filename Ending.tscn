@@ -1,8 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Level/LevelAssets/platforms.png" type="Texture" id=1]
 [ext_resource path="res://Ending.gd" type="Script" id=2]
 [ext_resource path="res://Level/LevelAssets/CatSouls/cat 1.png" type="Texture" id=3]
+[ext_resource path="res://Level/LevelAssets/CatSouls/cat 2.png" type="Texture" id=4]
+[ext_resource path="res://Level/LevelAssets/CatSouls/cat 7.png" type="Texture" id=5]
+[ext_resource path="res://Level/LevelAssets/CatSouls/cat 4.png" type="Texture" id=6]
+[ext_resource path="res://Level/LevelAssets/CatSouls/cat 8.png" type="Texture" id=7]
+[ext_resource path="res://Level/LevelAssets/CatSouls/cat 6.png" type="Texture" id=8]
+[ext_resource path="res://Level/LevelAssets/CatSouls/cat 5.png" type="Texture" id=9]
+[ext_resource path="res://Level/LevelAssets/CatSouls/cat 3.png" type="Texture" id=10]
 
 [sub_resource type="TileSet" id=1]
 0/name = "platforms.png 0"
@@ -76,6 +83,230 @@
 4/shapes = [  ]
 4/z_index = 0
 
+[sub_resource type="Animation" id=2]
+resource_name = "cat1"
+length = 18.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 14.7, 17 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.5252, 266.723 ), Vector2( 48.5252, 266.723 ), Vector2( 48.525, 150 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 14.7, 17 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "cat2"
+length = 18.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 15.1, 17.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 975.41, 299.051 ), Vector2( 975.41, 299.051 ), Vector2( 975.41, 183 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 15.1, 17.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "cat3"
+length = 18.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 15.5, 17.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 139.666, 330.999 ), Vector2( 139.666, 330.999 ), Vector2( 139.666, 214 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 15.5, 17.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "cat4"
+length = 19.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 15.9, 18.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 885.708, 363.075 ), Vector2( 885.708, 363.075 ), Vector2( 885.708, 247 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 15.9, 18.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "cat5"
+length = 19.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 16.3, 18.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 239.428, 394.964 ), Vector2( 239.428, 394.964 ), Vector2( 239.428, 278 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 16.3, 18.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "cat6"
+length = 19.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 16.7, 19 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 787.109, 426.973 ), Vector2( 787.109, 426.973 ), Vector2( 787.109, 310 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 16.7, 19 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "cat7"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 17.1, 19.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 334.486, 459.005 ), Vector2( 334.486, 459.005 ), Vector2( 334.486, 343 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 17.1, 19.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "cat8"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 17.5, 19.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 696.924, 490.984 ), Vector2( 696.924, 490.984 ), Vector2( 696.924, 374 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 17.5, 19.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
 [node name="Ending" type="Node2D"]
 script = ExtResource( 2 )
 
@@ -88,3 +319,68 @@ tile_data = PoolIntArray( 458764, 1, 0, 458765, 1, 0, 458766, 1, 0, 458767, 1, 0
 [node name="cat 1" type="Sprite" parent="."]
 position = Vector2( 48.5252, 266.723 )
 texture = ExtResource( 3 )
+
+[node name="cat1" type="AnimationPlayer" parent="cat 1"]
+autoplay = "cat1"
+anims/cat1 = SubResource( 2 )
+
+[node name="cat 2" type="Sprite" parent="."]
+position = Vector2( 975.41, 299.051 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="cat2" type="AnimationPlayer" parent="cat 2"]
+autoplay = "cat2"
+anims/cat2 = SubResource( 3 )
+
+[node name="cat 3" type="Sprite" parent="."]
+position = Vector2( 139.666, 330.999 )
+texture = ExtResource( 10 )
+
+[node name="cat3" type="AnimationPlayer" parent="cat 3"]
+autoplay = "cat3"
+anims/cat3 = SubResource( 4 )
+
+[node name="cat 4" type="Sprite" parent="."]
+position = Vector2( 885.708, 363.075 )
+texture = ExtResource( 6 )
+flip_h = true
+
+[node name="cat4" type="AnimationPlayer" parent="cat 4"]
+autoplay = "cat4"
+anims/cat4 = SubResource( 5 )
+
+[node name="cat 5" type="Sprite" parent="."]
+position = Vector2( 239.428, 394.964 )
+texture = ExtResource( 9 )
+
+[node name="cat5" type="AnimationPlayer" parent="cat 5"]
+autoplay = "cat5"
+anims/cat5 = SubResource( 6 )
+
+[node name="cat 6" type="Sprite" parent="."]
+position = Vector2( 787.109, 426.973 )
+texture = ExtResource( 8 )
+flip_h = true
+
+[node name="cat6" type="AnimationPlayer" parent="cat 6"]
+autoplay = "cat6"
+anims/cat6 = SubResource( 7 )
+
+[node name="cat 7" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.826087 )
+position = Vector2( 334.486, 438.83 )
+texture = ExtResource( 5 )
+
+[node name="cat7" type="AnimationPlayer" parent="cat 7"]
+autoplay = "cat7"
+anims/cat7 = SubResource( 8 )
+
+[node name="cat 8" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 696.924, 374 )
+texture = ExtResource( 7 )
+flip_h = true
+
+[node name="cat8" type="AnimationPlayer" parent="cat 8"]
+anims/cat8 = SubResource( 9 )
