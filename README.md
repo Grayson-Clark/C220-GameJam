@@ -4,6 +4,7 @@ MSCH-C220 Game Jam, April 2021
 
 ## Theme
 Every Death Counts
+
 Our game features a cat stuck in "purrrgatory," wherein it has to collect each of it's eight other lives in order to ascend into the afterlife. If the player has not spoken to and collected all eight of the cat's lives, the cat cannot ascend, therefore instituting the idea that every death counts toward success in the game. 
 
 ## Game Play
@@ -34,6 +35,7 @@ Syncing new instrument with the addition of a cat; smooth movement that isn't ru
 
 ## References
 Cattails (2021)
+
 Cats (1981)
 
 ## Future Development
@@ -41,8 +43,11 @@ who knows?
 
 # Created by: Group Name
 Mitchell Black - original music, bug fixes, pause menu, sound effects, audio programming
+
 Josh Church - lead level design, splash screen, main menu, coding, bug fixes, sound effects
+
 Grayson Clark - lead programming, level design, state machine, bug fixes
+
 Ren Gardner - sprites, platforms, backgrounds, dialogue, narrative design
 
 Screenshots:
