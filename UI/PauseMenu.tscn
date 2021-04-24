@@ -26,7 +26,6 @@ texture = ExtResource( 9 )
 centered = false
 
 [node name="Background1" type="Sprite" parent="."]
-visible = false
 texture = ExtResource( 2 )
 centered = false
 
