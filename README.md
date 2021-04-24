@@ -30,10 +30,12 @@ Syncing new instrument with the addition of a cat; smooth movement that isn't ru
 13. original platforms (3 designs) 
 14. final cutscene
 15. sound effects
-16. pause screen cat graphic from https://pixabay.com/vectors/cat-shadow-silhouette-black-animal-2074514/ 
-17. pause screen spirit graphic from https://www.freepik.com/free-icon/flame-silhouette-variant_735447.htm 
-18. meow sound effect from https://freesound.org/people/Kim_Kimovna/sounds/563746/
-19. jump sound effect from https://freesound.org/people/Juaner_/sounds/471428/
+16. Main Menu contributions from Jack Kinzig, Cal Hubbard
+17. "Graychell Joshen Games" sound effect by Jack Kinzig
+18. pause screen cat graphic from https://pixabay.com/vectors/cat-shadow-silhouette-black-animal-2074514/ 
+19. pause screen spirit graphic from https://www.freepik.com/free-icon/flame-silhouette-variant_735447.htm 
+20. meow sound effect from https://freesound.org/people/Kim_Kimovna/sounds/563746/
+21. jump sound effect from https://freesound.org/people/Juaner_/sounds/471428/
 
 ## References
 Cattails (2021)
