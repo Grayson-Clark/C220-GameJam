@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://Shaders/God_Rays.shader" type="Shader" id=1]
 [ext_resource path="res://Level/LevelAssets/LevelStart.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Level/LevelAssets/CatSouls/cat 7.png" type="Texture" id=13]
 [ext_resource path="res://Level/LevelAssets/CatSouls/cat 8.png" type="Texture" id=14]
 [ext_resource path="res://Level/LevelAssets/CatSouls/cat 2.png" type="Texture" id=15]
+[ext_resource path="res://Assets/bg 2.png" type="Texture" id=16]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node2D
@@ -485,6 +486,11 @@ script = SubResource( 1 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0.06, 0.06 )
+
+[node name="bg 2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 746.786, 21.7394 )
+scale = Vector2( 1.10784, 1.10784 )
+texture = ExtResource( 16 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 show_behind_parent = true
